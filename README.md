@@ -2,5 +2,5 @@
 About Me Website that's more asthetically pleasing than CV website.  
 > https://jumana-s.github.io/AboutMeWebsite/
 
-# TODO
+# *TODO*
 * make website mobile responsive
