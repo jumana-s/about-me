@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #9BB8CD;
+ 
+}
+
+.top-container{
+   background-color: #eef5fa;
+   padding-top: 10%;
+}
+
+.name{
+    color: #B4969A;
+}
+
+h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 5.625rem;
+    margin: 50px auto 0;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #c1afaf;
+    font-weight: lighter;
+}
+
+h1, h2, h3{
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+h2 span{
+    text-decoration: underline;
+}
+
+.top-cloud{
+    position: absolute;
+    z-index: 2;
+    right: 25%;
+    top: 10%;
+}
+
+.middle-cloud{
+    position: absolute;
+    z-index: 3;
+    right: 35%;
+    top: 50%;
+}
+
+.bottom-cloud{
+    position: absolute;
+    z-index: 4;
+    left:25%;
+}
+
+.mountain{
+    padding-top: 12%;
+}
+
+
+.profile, .skills, .contact-me{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.profile{
+    background-color: #9BB8CD;
+    color: white;
+}
+
+.skills{
+    background-color: #eef5fa;
+}
+
+.special-image{
+    height: 12.5rem;
+    width: 15.0625rem;
+}
+
+.contact-me{
+    background-color: #9BB8CD;
+    color: white;
+}
+
+.contact-me p{
+    margin-bottom: 2rem;
+}
+
+.resize-image{
+    height: 15.625rem;
+    width: 15.625rem;
+}
+
+.skill-row{
+  margin-top: 2rem;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: #B4969A;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+.btn:hover{
+    background-color: rgb(179, 129, 135);
+
+}
+
+.bottom-container{
+   background-color: #B4969A;
+   color: white;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+.bottom-container a{
+    color: #715e61;
+    margin: 2rem;
+    font-family: 'Merriweather', serif;
+    text-decoration: none
+}
+
+.bottom-container p{
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+    .top-cloud{
+        right:15%;
+    }
+    
+    .middle-cloud{
+        right: 25%;
+    }
+    
+    .bottom-cloud{
+        left:15%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+  
+    .top-cloud{
+        top: 5%;
+    }
+
+    .middle-cloud{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-height: 900px) {
+    .middle-cloud{
+        top: 65%;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    .middle-cloud{
+        display: none;
+    }
+}
