@@ -7,13 +7,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">        
         
     </head>
-    <body>
+    <body onclick="moveCloud()">
         <div class="top-container">
-            <img class="top-cloud" src="images/cloud.png" alt="cloud image">
+            <img class="top-cloud" id="one" src="images/cloud.png" alt="cloud image">
             <h1>I'm <span class="name">Salwa.</span></h1>
             <h2>a <span>stu</span>dent.</h2>
-            <img class="middle-cloud" src="images/cloud.png" alt="cloud image">
-            <img class="bottom-cloud" src="images/cloud.png" alt="cloud image">
+            <img class="middle-cloud" id="two" src="images/cloud.png" alt="cloud image">
+            <img class="bottom-cloud" id="three" src="images/cloud.png" alt="cloud image">
             <img class="mountain" src="images/mountain2.png" alt="mountain image">
         </div>
         <div class="middle-container">
@@ -56,7 +56,34 @@
             <p>© 2020 Salwa Mohamed.</p>
           </div>
           
+          <script>
+            function moveCloud() {
+                var elem1 = document.getElementById("one");   
+                var topcloud = screen.width*0.75;
+                
+                var elem2 = document.getElementById("two");   
+                var middlecloud = screen.width*0.50;
 
-        </div>
+                var elem3 = document.getElementById("three");   
+                var bottomcloud = screen.width*0.10;
+
+                move(elem1, topcloud);
+                move(elem2, middlecloud);
+                move(elem3, bottomcloud);   
+            }
+
+            function move(elem, cloud){
+                setInterval(frame, 30);
+                function frame() {
+                    if (cloud == screen.width) {
+                        cloud = 0;
+                    } 
+                    else {
+                        cloud++; 
+                        elem.style.left = cloud + 'px'; 
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
