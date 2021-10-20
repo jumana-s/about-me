@@ -119,7 +119,9 @@ h2 span{
 }
 
 .bottom-container{
-   background-color: #B4969A;
+   border-top-color: white;
+   border-top-style: dotted;
+   background-color: #9bb8cd;
    color: white;
    padding-top: 1rem;
    padding-bottom: 1rem;
