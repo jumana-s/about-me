@@ -119,24 +119,24 @@ h2 span{
 }
 
 .bottom-container{
-   border-top-color: white;
-   border-top-style: dotted;
-   background-color: #9bb8cd;
+   background-color: #b4969a;
    color: white;
-   padding-top: 1rem;
+   padding-top: 2rem;
    padding-bottom: 1rem;
 }
 
 .bottom-container a{
-    color: #715e61;
+    color: #ffffff;
     margin: 2rem;
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', serif;
+    font-size: larger;
     text-decoration: none
 }
 
 .bottom-container p{
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 0;
+    font-size: small;
 }
 
 @media only screen and (max-width: 1300px) {
